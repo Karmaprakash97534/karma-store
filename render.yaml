@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: karma-store-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm run start --workspace server
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: CLIENT_URL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false

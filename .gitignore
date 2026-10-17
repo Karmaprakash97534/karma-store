@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build files and caches
+dist/
+**/dist/
+.vite/
+**/.vite/
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local files
+*.local
+# Keep safe environment templates in version control
+!.env.example
+!**/.env.example
